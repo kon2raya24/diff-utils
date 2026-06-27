@@ -19,3 +19,11 @@ npm install diff-utils
 ## License
 
 MIT
+
+
+## Usage
+
+```typescript
+import { } from 'diff-utils';
+// See API section for available functions
+```
