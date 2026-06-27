@@ -1,6 +1,11 @@
 
 // Type exports for consumers
 // Add specific types as needed
+/**
+ * diffArrays<T>
+ * @param oldArr
+ * @param newArr
+ */
 export function diffArrays<T>(oldArr: T[], newArr: T[]): { added: T[]; removed: T[] } {
   if (oldArr === null || oldArr === undefined) throw new Error("Invalid input");
   const oldSet = new Set(oldArr);
