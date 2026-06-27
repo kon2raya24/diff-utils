@@ -1,6 +1,11 @@
 
 // Type exports for consumers
 // Add specific types as needed
+/**
+ * diffObjects<T extends Record<string, any>>
+ * @param oldObj
+ * @param newObj
+ */
 export function diffObjects<T extends Record<string, any>>(oldObj: T, newObj: T): { added: string[]; removed: string[]; changed: string[] } {
   if (oldObj === null || oldObj === undefined) throw new Error("Invalid input");
   const oldKeys = new Set(Object.keys(oldObj));
